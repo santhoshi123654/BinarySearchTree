@@ -24,8 +24,9 @@ public class Main {
 		binaryTree.add(67);
 
 		System.out.println("\n enter 1 : To inOrder binary tree"
-						   +"\n enter 2 : To preOrder binary tree"
-						   +"\n enter 3 : To postOrder binary tree");
+						   +"\n enter 2 : To pre order binary tree"
+						   +"\n enter 3 : To post order binary tree"
+						   +"\n enter 4 :To Search an Element");
 		Scanner scanner = new Scanner(System.in);
 		int num = scanner.nextInt();
 		switch (num) {
@@ -39,12 +40,17 @@ public class Main {
 		case 3:
 			binaryTree.postOrder();
 			break;
+			
+		case 4 :
+			System.out.println("Enter a value for searching ");
+			int element =scanner.nextInt();
+			System.out.println(binaryTree.search(element));
+			break;
 		default:
-			System.out.println("enter valid number ");
+			System.out.println("Enter valid number ");
 		}
 	}
 
 	
-
 	}
 
